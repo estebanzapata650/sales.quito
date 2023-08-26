@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Fonts proyect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap">
+    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar container-nav">
+            <img class="img-logo" src="./assets/logo.png" alt="LOGO">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#description-category" class="nav-link">Categoría</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#description-article" class="nav-link">Artículos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contacto</a>
+                </li>
+                <div class="active"></div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="body-container">
+
+        <div class="title-section" id="description-category">Selecciona la categoría que te interese</div>
+
+        <section id="category">
+
+            <div class="container-category" id="category-all">
+                <div class="category-img">
+                    <img src="./assets/box.png" alt="">
+                </div>
+                <div class="category-text">Todo</div>
+            </div>
+
+            <div class="container-category" id="category-clothes">
+                <div class="category-img">
+                    <img src="./assets/clothes.png" alt="">
+                </div>
+                <div class="category-text">Ropa</div>
+            </div>
+
+            <div class="container-category" id="category-kitchen">
+                <div class="category-img">
+                    <img src="./assets/kitchen.png" alt="">
+                </div>
+                <div class="category-text">Cocina</div>
+            </div>
+
+        </section>
+
+        <div class="title-section article-section-title" id="description-article">Artículos</div>
+    
+        <section id="article">
+
+            <div class="container-article" id="product1">
+                <div class="header-article">
+                    <div class="header-article-left">
+                        <div class="title-article">Mazda CX30</div>
+                        <div class="sub-title-article">Modelo 2022</div>
+                    </div>
+                    <div class="header-article-right">
+                        <div class="price-article">
+                            <div class="currency">USD$</div>
+                            <div class="value">30.000</div>
+                        </div>
+                    </div>
+                </div>        
+                <div class="swiper carousel">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/1.jpg" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/2.jpg" alt="">
+                        </div>
+                    </div>
+                    <button type="button" class="swiper-button-next"></button>
+                    <button type="button" class="swiper-button-prev"></button>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="specifications-article">
+                    <div class="specifications-article-left">
+                        <ul>
+                            <li>23.000 km</li>
+                            <li>Unico Dueño</li>
+                            <li>Nunca Chocada</li>
+                            <li>Lista para traspaso</li>
+                        </ul>
+                    </div>
+                    <div class="specifications-article-right">
+                        <div class="specifications-article-contact specifications-row">
+                            <a href="https://wa.me/593999098717?text=Hola,%20estoy%20interesado%20en%20algunos%20productos%20que%20tienes%20en%20venta" class="specifications-link whatsapp" target="_blank"></a>
+                        </div>
+                        <div class="specifications-article-category specifications-row">Vehículo</div>
+                        <div class="specifications-article-state specifications-row">Estado 10/10</div>                    
+                    </div>
+                    
+                </div>
+            </div>
+    
+        </section>
+    
+        <section id="contact">
+            <div class="container">
+                <div class="comunication">
+                    <div class="comunication-item">
+                        <a href="https://wa.me/593999241631?text=Hola,%20estoy%20interesado%20en%20algunos%20productos%20que%20tienes%20en%20venta" class="comunication-link whatsapp" target="_blank"></a> 
+                        <div class="comunication-text">Paola Mendez</div>
+                    </div>
+                    <div class="comunication-item">
+                        <a href="https://wa.me/593999098717?text=Hola,%20estoy%20interesado%20en%20algunos%20productos%20que%20tienes%20en%20venta" class="comunication-link whatsapp" target="_blank"></a> 
+                        <div class="comunication-text">Esteban Zapata</div>
+                    </div>
+                </div>
+                <div class="personal">
+                    <div class="personal-link personal"></div>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com" class="social-link facebook" target="_blank"></a>
+                    <a href="https://www.instagram.com" class="social-link instagram" target="_blank"></a>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="footer">
+            <div class="container">
+                <div>
+                    <img src="https://i.imgur.com/KLzqDFx.png" alt="Imagen de footer" width="50px" height="50px">           
+                </div>
+                <div>
+                    <a href="https://wa.me/593999098717" target="_blank"><p>Power by Esteban Zapata</p></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./src/app.js"></script>
+</body>
+
+</html>
